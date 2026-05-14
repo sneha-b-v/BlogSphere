@@ -20,10 +20,10 @@ app.use(express.json());
 mongoose
   .connect(MONGO_URI)
   .then(() => {
-    console.log("✅ Connected to MongoDB");
+    console.log("Connected to MongoDB");
     seedPosts(); // Seed sample posts on startup
   })
-  .catch((err) => console.error("❌ MongoDB connection error:", err));
+  .catch((err) => console.error("MongoDB connection error:", err));
 
 // ---- Post Schema & Model ----
 const postSchema = new mongoose.Schema({
@@ -94,7 +94,7 @@ async function seedPosts() {
   ];
 
   await Post.insertMany(samplePosts);
-  console.log("🌱 Sample posts seeded successfully");
+  console.log("Sample posts seeded successfully");
 }
 
 // =============================================
@@ -147,5 +147,5 @@ app.delete("/posts/:id", async (req, res) => {
 
 // ---- Start Server ----
 app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });

@@ -52,7 +52,7 @@ function CreatePost() {
   return (
     <div className="page">
       <div className="form-container">
-        <h1 className="form-title">✏️ Create New Post</h1>
+        <h1 className="form-title">Create New Post</h1>
         <p className="form-subtitle">Share your thoughts with the world</p>
 
         {error && <p className="form-error">{error}</p>}
@@ -137,7 +137,7 @@ function CreatePost() {
             className="btn btn-primary btn-full"
             disabled={submitting}
           >
-            {submitting ? "Publishing..." : "🚀 Publish Post"}
+            {submitting ? "Publishing..." : "Publish Post"}
           </button>
 
         </form>

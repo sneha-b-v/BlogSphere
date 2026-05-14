@@ -65,8 +65,8 @@ function PostDetail() {
         <h1 className="detail-title">{post.title}</h1>
 
         <div className="detail-meta">
-          <span>✍ <strong>{post.author}</strong></span>
-          <span>📅 {date}</span>
+          <span><strong>{post.author}</strong></span>
+          <span>{date}</span>
         </div>
 
         {/* Full post content — preserve line breaks */}

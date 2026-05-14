@@ -76,8 +76,8 @@ function PostCard({ post }) {
         <p className="card-preview">{preview}</p>
 
         <div className="card-footer">
-          <span className="card-author">✍ {post.author}</span>
-          <span className="card-date">📅 {date}</span>
+          <span className="card-author">{post.author}</span>
+          <span className="card-date">{date}</span>
         </div>
 
         <Link to={`/posts/${post._id}`} className="btn btn-primary">
